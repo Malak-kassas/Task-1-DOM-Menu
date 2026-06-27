@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+nav{
+    background:#2c3e50;
+    padding:15px;
+}
+
+ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+li{
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+}
+
+li:hover{
+    color:yellow;
+}
