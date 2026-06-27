@@ -28,3 +28,13 @@ nav.appendChild(ul);
 
 // إضافة nav داخل الصفحة
 document.getElementById("menu").appendChild(nav);
+// DOM Task
+
+const text = document.getElementById("text");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", function () {
+    text.textContent = "Welcome to JavaScript DOM";
+    text.style.color = "red";
+    text.style.fontSize = "30px";
+});
