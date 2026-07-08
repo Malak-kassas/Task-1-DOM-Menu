@@ -1,23 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Menu</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<div id="menu"></div>
-<hr>
+<body class="bg-gray-100 p-10">
 
-<h2>DOM Task</h2>
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
 
-<p id="text">Hello Student</p>
+        <h1 class="text-3xl font-bold text-center mb-8">
+            DOM & BOM Menu
+        </h1>
 
-<button id="btn">Change Text</button>
+        <!-- Menu -->
+        <div id="menu" class="mb-8"></div>
 
-<script src="script.js"></script>
+        <hr class="mb-8">
+
+        <!-- DOM Task -->
+        <h2 class="text-2xl font-bold mb-4">DOM Task</h2>
+
+        <p id="text" class="text-lg mb-4">
+            Hello Student
+        </p>
+
+        <button
+            id="btn"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Change Text
+        </button>
+
+        <hr class="my-8">
+
+        <!-- BOM Task -->
+        <h2 class="text-2xl font-bold mb-4">BOM Task</h2>
+
+        <div class="flex gap-4">
+            <button
+                id="alertBtn"
+                class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                Alert
+            </button>
+
+            <button
+                id="promptBtn"
+                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                Prompt
+            </button>
+
+            <button
+                id="confirmBtn"
+                class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
+                Confirm
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
+
+
